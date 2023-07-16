@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9d4783e555.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="font-manrope">
+
+
+
+    <section id="main" class="flex justify-center">
+        <div class="h-[550px] min-w-[300px] sm:w-[500px] mt-[100px]">
+
+            <!-- start heading -->
+            <div class="flex justify-between text-white font-bold text-2xl items-center" id="heading">
+                <h1 class="tracking-[20px] text-3xl">TODO</h1>
+                <button class="light" id="mod"><img src="./images/icon-moon.png" alt=""></button>
+            </div>
+            <!-- end heading -->
+
+            <!-- start input fiels -->
+            <div class="mt-10 text-center" id="inptTo">
+                <input  class="w-full  py-4 ps-[75px] outline-none rounded-md font-bold" type="text" placeholder="Create a new Todo" >
+            </div>
+            <!-- ens input fiels -->
+
+            <!-- starts lists of todo All -->
+            <div id="list" class="mt-10 rounded-t-lg shadow-lg">
+                
+                
+            </div>           
+            <!-- end lists of todo All -->
+
+            <!-- start active todo  -->
+            <div id="actives" class="mt-10 rounded-t-lg shadow-lg">
+                
+            
+            </div> 
+            <!-- end active todo  -->
+
+            <!-- start completed todo  -->
+            <div id="completed" class="mt-10 rounded-t-lg shadow-lg">
+                <!-- <div class="relative">
+                    <h2 class=" w-full py-5 ps-[75px] outline-none border-b-2 font-extrabold text-black bg-white cursor-pointer">ddsfdsfdsf</h2>
+                </div> -->
+
+            </div> 
+            <!-- end completed todo  -->
+
+            <!-- start operations -->
+            <div class="flex justify-between items-center flex-col gap-6 md:flex-row py-3 px-5 rounded-b-lg shadow-lg bg-white" id="option">
+                <h4 class="font-bold text-[#c2c1c5]"><span id="numItems">0 </span> left</h4>
+                <ul class="flex gap-3" id="status">
+                    <li class=" font-bold text-[#c2c1c5] cursor-pointer hover:text-black transition-all duration-500 all active">All</li>
+                    <li class=" font-bold text-[#c2c1c5] cursor-pointer hover:text-black transition-all duration-500 actives">Active</li>
+                    <li class=" font-bold text-[#c2c1c5] cursor-pointer hover:text-black transition-all duration-500 completed">Completed</li>
+                </ul>
+                <button class=" font-bold text-[#c2c1c5] hover:text-black transition-all duration-500"  id="deletall">Clear Completed</>
+            </div>
+            <!-- end operations -->
+            
+            <h4 class="text-center mt-10 font-bold text-[#c2c1c5]"> Drag and drop to reorder list</h4>
+        </div>
+    </section>
+
+
+
+    <script src="./src/main.js" ></script>
+</body>
+</html>
